@@ -1,0 +1,120 @@
+/*Gênero*/
+.genero
+{
+    margin-top: 55px;
+}
+.genero
+{
+    margin-bottom: 20px;
+}
+.genero ol
+{
+    font-weight: bold;
+}
+.genero li
+{
+    width: 19%;
+    margin-left: 30px;
+    padding-left: 16px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+.genero a
+{
+    font-size: 20px;
+}
+.genero input
+{
+    width: 1090px;
+    margin-left: 20px;
+}
+
+/*Pesquisa por letra*/
+.pesquisa
+{
+    margin-left: 20px;
+}
+.pesquisa input 
+{
+	width: 0;
+	height: 0;
+	position: absolute;
+    left: -9999px;
+}
+.pesquisa input + label 
+{
+  padding-left: 10px;
+  padding: 6px 8px;
+  box-sizing: border-box;
+  position: relative;
+  display: inline-block;
+  border: solid 3px #DDD;
+  background-color: #FFF;
+  font-size: 1rem;
+  line-height: 140%;
+  font-weight: 600;
+  text-align: center;
+  box-shadow: 0 0 0 rgba(255, 255, 255, 0);
+  transition: border-color .15s ease-out,  color .25s ease-out,  background-color .15s ease-out, box-shadow .15s ease-out;
+  /* ADD THESE PROPERTIES TO SWITCH FROM AUTO WIDTH TO FULL WIDTH */
+  /*flex: 0 0 50%; display: flex; justify-content: center; align-items: center;*/
+  /* ----- */
+}
+.pesquisa input + label
+{
+  border-radius: 5px 5px 5px 5px;
+}
+
+.pesquisa input:hover + label 
+{
+  border: 1px solid rgba(194, 89, 4, 0.774);
+}
+.pesquisa input:checked + label 
+{
+  background-color: rgba(194, 89, 4, 0.774);
+  color: #FFF;
+  box-shadow: 0 0 10px rgba(102, 179, 251, 0.5);
+  border-color: rgba(194, 89, 4, 0.774);
+  z-index: 1;
+}
+.pesquisa input:focus + label 
+{
+  outline: dotted 1px #CCC;
+  outline-offset: .05rem;
+}
+.botao
+{
+    padding-bottom: 25px;
+    margin-top: 60px;
+    text-align: center;
+}
+
+/*REsultado*/
+.resultado
+{
+    padding-left: 10px;
+    width: 1124px;
+}
+.resultado h2
+{
+    text-align: center;
+    font-weight: bold;
+}
+/*tipografia*/
+div .search
+{
+    font-size: 15px;
+    padding-left: 2px;
+    width: 1070px;
+    border-bottom: 1px solid  rgba(194, 89, 4, 0.774);
+}
+#destaque-search
+{
+    font-size: 21px;
+    text-align: center;
+    width: 1070px;
+    margin-left: 20px;
+    margin-right: 10px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid  rgba(194, 89, 4, 0.774);
+}

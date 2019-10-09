@@ -1,0 +1,89 @@
+.wrapper {
+    margin: 20px auto;
+    background-color: #ffffff;
+    box-shadow: 0 1px 2px 0 #c9ced1;
+    border-radius: 4px;
+  }
+.wrapper li
+{
+  margin-top: 2em;
+  margin-bottom: 2em;
+  padding-top: 0.5px;
+  padding-left: 0.5px;
+  padding-right: 0.5px;
+  padding-bottom: 0.5px;
+  box-shadow: none;
+}
+  /* ------------------------------ PAGINTION BEGIN ------------------------------ */
+  .pager {
+    margin: 0 0 3.75rem;
+    font-size: 0;
+    text-align: center;
+  }
+  .pager__item {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 1.125rem;
+    font-weight: bold;
+    margin: 0 2px;
+  }
+  .pager__item.active .pager__link {
+    background-color: #ffb74d;
+    border-color: #ffb74d;
+    color: #fff;
+    text-decoration: none;
+  }
+  .pager__item--prev svg, .pager__item--next svg {
+    width: 8px;
+    height: 12px;
+  }
+  .pager__item--next .pager__link svg {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    -webkit-transform-origin: center center;
+            transform-origin: center center;
+  }
+  .pager__link {
+    position: relative;
+    border-radius: 4px;
+    display: block;
+    text-align: center;
+    width: 2.625rem;
+    height: 2.625rem;
+    line-height: 2.625rem;
+    margin-left: -1px;
+    color: #2f3640;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  .pager__link:hover, .pager__link:focus, .pager__link:active {
+    background-color: #ffb74d;
+    border-color: #ffb74d;
+    color: #fff;
+    text-decoration: none;
+  }
+  .pager__link:hover svg path, .pager__link:focus svg path, .pager__link:active svg path {
+    fill: #fff;
+  }
+  .pager .pager__item.active + .pager__item .pager__link, .pager .pager__item:hover + .pager__item .pager__link {
+    border-left-color: #ffb74d;
+  }
+  
+  @media screen and (max-width: 576px) {
+    .pager__item {
+      position: absolute;
+      top: -9999px;
+      left: -9999px;
+    }
+    .pager__item.active, .pager__item:first-of-type, .pager__item:last-of-type, .pager__item:nth-of-type(2), .pager__item:nth-last-of-type(2) {
+      position: initial;
+      top: initial;
+      left: initial;
+    }
+    .pager__item.active + li {
+      position: initial;
+      top: initial;
+      left: initial;
+    }
+  }
+  /* ------------------------------ PAGINTION END ------------------------------ */

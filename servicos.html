@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--<link href="css/home/estilos.css" rel="stylesheet" type="text/css">
+    <link href="css/home/reset.css" rel="stylesheet" type="text/css">-->
+    <!--Importação do novel-->
+    <link rel="stylesheet" href="css/stilo.css">
+    <link rel="stylesheet" href="css/cabecalho.css">
+    <link rel="stylesheet" href="generocss.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.7.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/botao.css">
+    <link rel="stylesheet" href="css/input-search.css">
+    <link rel="stylesheet" href="css/card-novel-busca.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/pagination1.css">
+    <title>Procura-se</title>
+</head>
+<body>
+    <header class="container">
+        <h1><img src="images/logo.png" width="170" height="120"></h1>
+
+        <p class="sacola">Nenhum item na sacola de compra</p>
+                
+        <nav class="menu-opcoes">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Procura-se</a></li>
+                <li><a href="sobre.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--Gêneros-->
+    <div class="conteiner paineis">
+        <div class="painel genero">
+            <h2 id="destaque-search">Pesquisar</h2>
+            <div class="busca-novel">
+                <form action="">
+                    <input type="search" placeholder="Letra, Autor, Descrição, Gênero">
+                    <i class="fa fa-search"></i>
+                </form>
+            </div>
+            <!--Classificação por letra-->
+            <div class="pesquisa">
+                <h2 class="search">Por Letra</h2>
+                <input type="radio" name="letras" id="todos" checked="checked" />
+                <label for="todos">Todos</label>
+                <input type="radio" name="letras" value="A" id="letra-a" />
+                <label for="letra-a">A</label>
+                <input type="radio" name="letras" value="B" id="letra-b" />
+                <label for="letra-b">B</label>
+                <input type="radio" name="letras" value="C" id="letra-c" />
+                <label for="letra-c">C</label>
+                <input type="radio" name="letras" value="D" id="letra-d" />
+                <label for="letra-d">D</label>
+                <input type="radio" name="letras" value="E" id="letra-e" />
+                <label for="letra-e">E</label>
+                <input type="radio" name="letras" value="F" id="letra-f" />
+                <label for="letra-f">F</label>
+                <input type="radio" name="letras" value="G" id="letra-g" />
+                <label for="letra-g">G</label>
+                <input type="radio" name="letras" value="H" id="letra-h" />
+                <label for="letra-h">H</label>
+                <input type="radio" name="letras" value="I" id="letra-i" />
+                <label for="letra-i">I</label>
+                <input type="radio" name="letras" value="J" id="letra-j" />
+                <label for="letra-j">J</label>
+                <input type="radio" name="letras" value="K" id="letra-k" />
+                <label for="letra-k">K</label>
+                <input type="radio" name="letras" value="L" id="letra-l" />
+                <label for="letra-l">L</label>
+                <input type="radio" name="letras" value="M" id="letra-m" />
+                <label for="letra-m">M</label>
+                <input type="radio" name="letras" value="N" id="letra-n" />
+                <label for="letra-n">N</label>
+                <input type="radio" name="letras" value="O" id="letra-o" />
+                <label for="letra-o">O</label>
+                <input type="radio" name="letras" value="P" id="letra-p" />
+                <label for="letra-p">P</label>
+                <input type="radio" name="letras" value="Q" id="letra-q" />
+                <label for="letra-q">Q</label>
+                <input type="radio" name="letras" value="R" id="letra-r" />
+                <label for="letra-r">R</label>
+                <input type="radio" name="letras" value="S" id="letra-s" />
+                <label for="letra-s">S</label>
+                <input type="radio" name="letras" value="T" id="letra-t" />
+                <label for="letra-t">T</label>
+                <input type="radio" name="letras" value="U" id="letra-u" />
+                <label for="letra-u">U</label>
+                <input type="radio" name="letras" value="V" id="letra-v" />
+                <label for="letra-v">V</label>
+                <input type="radio" name="letras" value="X" id="letra-x" />
+                <label for="letra-x">X</label>
+                <input type="radio" name="letras" value="W" id="letra-w" />
+                <label for="letra-w">W</label>
+                <input type="radio" name="letras" value="Y" id="letra-y" />
+                <label for="letra-y">Y</label>
+                <input type="radio" name="letras" value="Z" id="letra-z" />
+                <label for="letra-z">Z</label>
+            </div>
+            <!-- fim div por letra-->
+            <!--Pesquisa por gênero-->
+            <div class="pesquisa">
+                <h2 class="search">Gênero</h2>
+                <input type="radio" name="genero" id="select-todos" checked="checked"/>
+                <label for="select-todos">Todos</label>
+
+                <input type="radio" name="genero" id="gen-acao" value="acao" />
+                <label for="gen-acao">Hidraulico</label>
+
+                <input type="radio" name="genero" id="gen-adulto" value="adulto" />
+                <label for="gen-adulto">Pedreiro</label>
+
+                <input type="radio" name="genero" id="gen-artes-marciais" value="artes-marciais" />
+                <label for="gen-artes-marciais">Eletricista</label>
+
+                <input type="radio" name="genero" id="gen-aventura" value="aventura" />
+                <label for="gen-aventura">Serviços Gerais</label>
+
+                <input type="radio" name="genero" id="gen-comedia" value="comedia" />
+                <label for="gen-comedia">Tecnologia da Informação</label>
+
+                <input type="radio" name="genero" id="gen-drama" value="drama" />
+                <label for="gen-drama">Mecânico</label>
+
+                <input type="radio" name="genero" id="gen-ecchi" value="ecchi" />
+                <label for="gen-ecchi">Saúde</label>
+
+                <input type="radio" name="genero" id="gen-sport" value="sport" />
+                <label for="gen-sport">Veterinario</label>
+
+                <input type="radio" name="genero" id="gen-fantasia" value="fantasia" />
+                <label for="gen-fantasia">Outros</label>
+
+            </div>
+            <!--fim pesquisa por gênero-->
+
+            <!--Pesquisa por sub-gênero-->
+            <div class="pesquisa">
+                <h2 class="search">Sub-Gênero</h2>
+
+                <input type="radio" name="subgenero" id="todos-sub" checked="checked" />
+                <label for="todos-sub">Todos</label>
+
+                <input type="radio" name="subgenero" id="Encanador" value="Encanador" />
+                <label for="Encanador">Encanador</label>
+
+                <input type="radio" name="subgenero" id="nutricionista" value="nutricionista" />
+                <label for="ingles">Nutricinionista</label>
+
+                <input type="radio" name="subgenero" id="mestredeobra" value="mestredeobra" />
+                <label for="mestredeobra">Mestre de Obra</label>
+
+                <input type="radio" name="subgenero" id="faxineira" value="faxineira" />
+                <label for="faxineira">Faxineira</label>
+
+                <input type="radio" name="subgenero" id="animador" value="animador" />
+                <label for="animador">Animador de Festa</label>
+
+                <input type="radio" name="subgenero" id="dj" value="dj" />
+                <label for="dj">DJ</label>
+            </div>
+            <!--Fim pesquisa por tradução-->
+            <!--
+            
+            <div class="pesquisa">
+                <h2 class="search">Tipo</h2>
+
+                <input type="radio" name="tipo" id="todos-tipo" checked="checked" />
+                <label for="todos-tipo">Todos</label>
+
+                <input type="radio" name="tipo" id="web-novel" value="web novel" />
+                <label for="web-novel">Web Novel</label>
+
+                <input type="radio" name="tipo" id="novel" value="novel" />
+                <label for="novel">Novel</label>
+
+                <input type="radio" name="tipo" id="livro" value="livro" />
+                <label for="livro">Livro</label> 
+
+                <input type="radio" name="tipo" id="light-novel" value="light novel" />
+                <label for="light-novel">Light Novel</label>
+            </div>
+            -->
+
+            <!--Pesquisa por ordem-->
+            <div class="pesquisa">
+                <h2 class="search">Ordem</h2>
+
+                <input type="radio" name="ordem" id="ordem-todos" />
+                <label for="ordem-todos">Todos</label>
+
+                <input type="radio" name="ordem" id="ordem-visto" value="mais vistos" />
+                <label for="ordem-visto">Mais Vistos</label>
+
+                <input type="radio" name="ordem" id="ordem-novos" value="novos" />
+                <label for="ordem-novos">Novos</label>
+
+                <input type="radio" name="ordem" id="ordem-destaque" value="destaque" />
+                <label for="ordem-destaque">Destaques</label>
+            </div>
+
+            <!--Botões pesquisar e limpar-->
+            <div class="botao">
+                <a href="#/" class="brk-btn">Pesquisar</a>
+                <a href="#/" class="underlined-a">&nbsp;&nbsp;Limpar&nbsp;&nbsp;</a>
+            </div>
+            <!--Fim botões-->
+        </div>
+        <!--Fim div Gênero-->
+
+        <div class="painel resultado">
+            <h2 class="search">Busca Serviços</h2>
+            <!--first card-->
+            <div class="plx-card gold">
+                <div class="pxc-bg" style="background-image:url(images/obra.jpg); width: 123; height: 93;">  </div>
+                <div class="pxc-avatar"><img src="images/user.png"/></div>
+                <div class="pxc-stopper"></div>
+                <div class="pxc-subcard">
+                    <div class="pxc-title">PEDREIRO</div>
+                    <div class="pxc-sub">BUSCO PEDREIRO EXPERIENTE</div>
+                    <div class="pxc-feats">
+                        <p>Executar trabalhos em alvenaria, concreto e outros materiais, guiando-se por 
+                        desenhos, esquemas e especificações, utilizando processos e instrumentos 
+                        pertinentes ao ofício para construir, reformar ou reparar prédios e obras similares.</p>
+                    </div>
+                    <div class="pxc-tags">
+                        <div>Pedreiro</div>
+                        <div>Outros</div>
+                    </div>
+                    <div class="bottom-row"> 
+                        <div class="links">
+                            <a class="comprar" uk-tooltip="link-para-comprar">
+                                <i class="fas fa-shopping-cart"> </i>
+                            </a>
+                            <a class="link book" uk-tooltip="leitura">
+                                <i class="fas fa-book"></i>
+                            </a>
+                            <a class="favorito" uk-tooltip="favorito">
+                                <i class="fas fa-heart"> </i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+<!--first card-->
+<div class="plx-card gold">
+        <div class="pxc-bg" style="background-image:url(images/obra.jpg); width: 123; height: 93;">  </div>
+        <div class="pxc-avatar"><img src="images/user.png"/></div>
+        <div class="pxc-stopper"></div>
+        <div class="pxc-subcard">
+            <div class="pxc-title">PEDREIRO</div>
+            <div class="pxc-sub">BUSCO PEDREIRO EXPERIENTE</div>
+            <div class="pxc-feats">
+                <p>Executar trabalhos em alvenaria, concreto e outros materiais, guiando-se por 
+                desenhos, esquemas e especificações, utilizando processos e instrumentos 
+                pertinentes ao ofício para construir, reformar ou reparar prédios e obras similares.</p>
+            </div>
+            <div class="pxc-tags">
+                <div>Pedreiro</div>
+                <div>Outros</div>
+            </div>
+            <div class="bottom-row"> 
+                <div class="links">
+                    <a class="comprar" uk-tooltip="link-para-comprar">
+                        <i class="fas fa-shopping-cart"> </i>
+                    </a>
+                    <a class="link book" uk-tooltip="leitura">
+                        <i class="fas fa-book"></i>
+                    </a>
+                    <a class="favorito" uk-tooltip="favorito">
+                        <i class="fas fa-heart"> </i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--first card-->
+    <div class="plx-card gold">
+            <div class="pxc-bg" style="background-image:url(images/obra.jpg); width: 123; height: 93;">  </div>
+            <div class="pxc-avatar"><img src="images/user.png"/></div>
+            <div class="pxc-stopper"></div>
+            <div class="pxc-subcard">
+                <div class="pxc-title">PEDREIRO</div>
+                <div class="pxc-sub">BUSCO PEDREIRO EXPERIENTE</div>
+                <div class="pxc-feats">
+                    <p>Executar trabalhos em alvenaria, concreto e outros materiais, guiando-se por 
+                    desenhos, esquemas e especificações, utilizando processos e instrumentos 
+                    pertinentes ao ofício para construir, reformar ou reparar prédios e obras similares.</p>
+                </div>
+                <div class="pxc-tags">
+                    <div>Pedreiro</div>
+                    <div>Outros</div>
+                </div>
+                <div class="bottom-row"> 
+                    <div class="links">
+                        <a class="comprar" uk-tooltip="link-para-comprar">
+                            <i class="fas fa-shopping-cart"> </i>
+                        </a>
+                        <a class="link book" uk-tooltip="leitura">
+                            <i class="fas fa-book"></i>
+                        </a>
+                        <a class="favorito" uk-tooltip="favorito">
+                            <i class="fas fa-heart"> </i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--first card-->
+        <div class="plx-card gold">
+                <div class="pxc-bg" style="background-image:url(images/obra.jpg); width: 123; height: 93;">  </div>
+                <div class="pxc-avatar"><img src="images/user.png"/></div>
+                <div class="pxc-stopper"></div>
+                <div class="pxc-subcard">
+                    <div class="pxc-title">PEDREIRO</div>
+                    <div class="pxc-sub">BUSCO PEDREIRO EXPERIENTE</div>
+                    <div class="pxc-feats">
+                        <p>Executar trabalhos em alvenaria, concreto e outros materiais, guiando-se por 
+                        desenhos, esquemas e especificações, utilizando processos e instrumentos 
+                        pertinentes ao ofício para construir, reformar ou reparar prédios e obras similares.</p>
+                    </div>
+                    <div class="pxc-tags">
+                        <div>Pedreiro</div>
+                        <div>Outros</div>
+                    </div>
+                    <div class="bottom-row"> 
+                        <div class="links">
+                            <a class="comprar" uk-tooltip="link-para-comprar">
+                                <i class="fas fa-shopping-cart"> </i>
+                            </a>
+                            <a class="link book" uk-tooltip="leitura">
+                                <i class="fas fa-book"></i>
+                            </a>
+                            <a class="favorito" uk-tooltip="favorito">
+                                <i class="fas fa-heart"> </i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--first card-->
+            <div class="plx-card gold">
+                    <div class="pxc-bg" style="background-image:url(images/obra.jpg); width: 123; height: 93;">  </div>
+                    <div class="pxc-avatar"><img src="images/user.png"/></div>
+                    <div class="pxc-stopper"></div>
+                    <div class="pxc-subcard">
+                        <div class="pxc-title">PEDREIRO</div>
+                        <div class="pxc-sub">BUSCO PEDREIRO EXPERIENTE</div>
+                        <div class="pxc-feats">
+                            <p>Executar trabalhos em alvenaria, concreto e outros materiais, guiando-se por 
+                            desenhos, esquemas e especificações, utilizando processos e instrumentos 
+                            pertinentes ao ofício para construir, reformar ou reparar prédios e obras similares.</p>
+                        </div>
+                        <div class="pxc-tags">
+                            <div>Pedreiro</div>
+                            <div>Outros</div>
+                        </div>
+                        <div class="bottom-row"> 
+                            <div class="links">
+                                <a class="comprar" uk-tooltip="link-para-comprar">
+                                    <i class="fas fa-shopping-cart"> </i>
+                                </a>
+                                <a class="link book" uk-tooltip="leitura">
+                                    <i class="fas fa-book"></i>
+                                </a>
+                                <a class="favorito" uk-tooltip="favorito">
+                                    <i class="fas fa-heart"> </i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            <div class="wrapper">
+                <nav>
+                    <ul class="pager">
+                        <li class="pager__item pager__item--prev">
+                            <a class="pager__link" href="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewbox="0 0 8 12">
+                                    <g fill="none" fill-rule="evenodd">
+                                        <path fill="#33313C" d="M7.41 1.41L6 0 0 6l6 6 1.41-1.41L2.83 6z"></path>
+                                    </g>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="pager__item"><a class="pager__link" href="">...</a></li>
+                        <li class="pager__item"><a class="pager__link" href="">1</a></li>
+                        <li class="pager__item active"><a class="pager__link" href="">2</a></li>
+                        <li class="pager__item"><a class="pager__link" href="">3</a></li>
+                        <li class="pager__item"><a class="pager__link" href="">4</a></li>
+                        <li class="pager__item"><a class="pager__link" href="">6</a></li>
+                        <li class="pager__item"><a class="pager__link" href="">7</a></li>
+                        <li class="pager__item"><a class="pager__link" href="">...</a></li>
+                        <li class="pager__item pager__item--next"><a class="pager__link" href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewbox="0 0 8 12">
+                                <g fill="none" fill-rule="evenodd">
+                                    <path fill="#33313C" d="M7.41 1.41L6 0 0 6l6 6 1.41-1.41L2.83 6z"></path>
+                                </g>
+                            </svg></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,62 @@
+/*direito autorais https://codepen.io/yourpalnurav/pen/LqNmzL*/
+
+.underlined-a 
+{
+	text-decoration: none;
+	color: rgba(194, 89, 4, 0.774);
+	padding-bottom: 0.15em;
+	box-sizing: border-box;
+	box-shadow: inset 0 -0.2em 0 rgba(194, 89, 4, 0.774);
+	transition: 0.2s;
+}
+.underlined-a:hover 
+{
+	color: rgb(247, 243, 243);
+	box-shadow: inset 0 -2em 0 rgba(194, 89, 4, 0.774);
+	transition: all 0.45s cubic-bezier(0.86, 0, 0.07, 1);
+}
+  
+.brk-btn {
+	position: relative;
+	background: none;
+	color: rgba(194, 89, 4, 0.774);
+	text-decoration: none;
+	border: 0.2em solid rgba(194, 89, 4, 0.774);;
+	padding: 0.5em 1em;
+}
+.brk-btn::before 
+{
+	content: "";
+	display: block;
+	position: absolute;
+	width: 10%;
+	background: rgb(247, 245, 245);
+	height: 0.3em;
+	right: 20%;
+	top: -0.21em;
+	transform: skewX(-45deg);
+	-webkit-transition: all 0.45s cubic-bezier(0.86, 0, 0.07, 1);
+	transition: all 0.45s cubic-bezier(0.86, 0, 0.07, 1);
+}
+.brk-btn::after 
+{
+	content: "";
+	display: block;
+	position: absolute;
+	width: 10%;
+	background: rgb(252, 252, 252);
+	height: 0.3em;
+	left: 20%;
+	bottom: -0.25em;
+	transform: skewX(45deg);
+	-webkit-transition: all 0.45 cubic-bezier(0.86, 0, 0.07, 1);
+	transition: all 0.45s cubic-bezier(0.86, 0, 0.07, 1);
+}
+.brk-btn:hover::before 
+{
+	right: 80%;
+}
+.brk-btn:hover::after 
+{
+	left: 80%;
+}
