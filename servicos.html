@@ -4,8 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!--<link href="css/home/estilos.css" rel="stylesheet" type="text/css">
-    <link href="css/home/reset.css" rel="stylesheet" type="text/css">-->
     <!--Importação do novel-->
     <link rel="stylesheet" href="css/stilo.css">
     <link rel="stylesheet" href="css/cabecalho.css">
@@ -20,20 +18,42 @@
     <title>Procura-se</title>
 </head>
 <body>
-    <header class="container">
-        <h1><img src="images/logo.png" width="170" height="120"></h1>
-
-        <p class="sacola">Nenhum item na sacola de compra</p>
-                
-        <nav class="menu-opcoes">
+    <!--Cabeçalhoo-->
+    <header class="conteiner">
+        <div class="logo">
+            <img src="img-cap/overlord fundo.png" alt="Logo Overlord">
+        </div>
+        <nav class="login">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Serviços</a></li>
-                <li><a href="#">Procura-se</a></li>
-                <li><a href="sobre.html">Login</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Registrar</a></li>
             </ul>
         </nav>
     </header>
+    <!--Fim cabeçalho-->
+
+    <!--nav opcion-->
+    <nav class="conteiner opcion">
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="#">Serviços</a>
+            </li>
+            <li>
+                <a href="#">Procura-se</a>
+            </li>
+            <li>
+                <a href="#">Conta</a>
+            </li>
+            <li>
+                <a href="#">Sobre</a>
+            </li>
+        </ul>
+    </nav>
+    <!--Fim nav opcion-->
+
     <!--Gêneros-->
     <div class="conteiner paineis">
         <div class="painel genero">
@@ -113,7 +133,7 @@
                 <label for="gen-acao">Hidraulico</label>
 
                 <input type="radio" name="genero" id="gen-adulto" value="adulto" />
-                <label for="gen-adulto">Pedreiro</label>
+                <label for="gen-adulto">Obras</label>
 
                 <input type="radio" name="genero" id="gen-artes-marciais" value="artes-marciais" />
                 <label for="gen-artes-marciais">Eletricista</label>

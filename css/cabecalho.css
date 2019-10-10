@@ -1,8 +1,6 @@
 /*Image de fundo*/
-.logo
-{
-    background-image: url(../img-cap/nazarick-palaci.png);
-    height: 327px;
+header{
+    background-color: cornsilk;
 }
 /*Centralizar o logo*/
 .logo img

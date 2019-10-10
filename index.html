@@ -1,221 +1,446 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
     <head>
-        <title>Projeto Procura-se</title>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width">
-        <link href="css/home/estilos.css" rel="stylesheet" type="text/css">
-        <link href="css/home/reset.css" rel="stylesheet" type="text/css">
-        <!--<link href="css/colors.css" rel="stylesheet" type="text/css">-->
-
+        <title>Procura-se</title>
+        <link rel="stylesheet" href="css/stilo.css">
+        <link rel="stylesheet" href="css/cabecalho.css">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/indexcss.css">
+        <link rel="stylesheet" href="css/pagination1.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
-        <header class="container">
-            <h1><img src="images/logo.png" width="170" height="120"></h1>
-
-            <p class="sacola">Nenhum item na sacola de compra</p>
-                
-            <nav class="menu-opcoes">
+        <!--Cabeçalhoo-->
+        <header class="conteiner">
+            <div class="logo">
+                <img src="img-cap/overlord fundo.png" alt="Logo Overlord">
+            </div>
+            <nav class="login">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="servicos.html">Serviços</a></li>
-                    <li><a href="#">Procura-se</a></li>
-                    <li><a href="sobre.html">Login</a></li>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Registrar</a></li>
                 </ul>
+                <input type="search">
             </nav>
         </header>
-        <aside class="container destaque">
-            <section class="busca">
-                <h1>Busca</h1>
-                <form>
-                    <input type="search">
+        <!--Fim cabeçalho-->
 
-                    <button></button>
-                </form>
-            </section>
-            <!-- fim busca -->
-            <section class="menu-departamentos">
-                <h2>Departamentos</h2>
-
-                <nav>
-                    <ul>
-                        <li>
-                            <a	href="#">SERVIÇOS DE LIMPEZAS</a>
-                            <ul>
-                                <li><a href="#">Limpezas de fossas</a></li>
-                                <li><a href="#">Limpezas de domesticas</a></li>
-                                <li><a href="#">Limpezas de obras</a></li>
-                                <li><a href="#">Limpezas empresarias</a></li>
-                            </ul>
-                        </li>
-                        <li><a	href="#">SERVIÇOS DE OBRAS</a></li>
-                        <li><a	href="#">SERVIÇOS ELETRICOS</a></li>
-                        <li><a	href="#">SERVIÇOS HIDRAULICOS</a></li>
-                    </ul>
-                </nav>
-            </section>
-            <!--Fim menu departamento-->
-            <section class="banner-destaque">
-                <figure>
-                    <img src="images/PROCURA.png" width="700" height="480">
-                </figure>
-            </section>
-            <!--fim banner destaque-->
-        </aside>
-
-        
-        <!--contem a parte de destaque e mais vendidos-->
-        <div class="container paineis">
-            <!--Painel de novidade e mais vendidos entraram aqui-->
-            <section class="painel novidades">
-                <h2>novidades</h2>
-                <ol>
-                <!--Primeiro produto-->
+        <!--nav opcion-->
+        <nav class="conteiner opcion">
+                <ul>
                     <li>
-                        <a href="produtos.html">
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="servicos.html">Serviços</a>
+                    </li>
+                    <li>
+                        <a href="#">Procura-se</a>
+                    </li>
+                    <li>
+                        <a href="#">Conta</a>
+                    </li>
+                    <li>
+                        <a href="#">Sobre</a>
+                    </li>
+                </ul>
+        </nav>
+        <!--Fim nav opcion-->
+
+        <!--Entrar os destaque, gêneros, lançamento, noticia e recomendado-->
+        <div class="conteiner paineis">
+            <!--Seção destaque-->
+            <section class="painel destaque">
+                <h2>Os Mais Procurados</h2>
+                <ol>
+                    <!--Primeiro destaque-->
+                    <li>
+                        <a href="#">
                             <figure>
-                                <img src="images/reparo_notebook.jpg" alt="miniatura1" width="140" height="140">
-                                <figcaption>
-                                    Reparo de Notebook<br>
-                                    Fone: xx-xxxx-xxxx
-                                </figcaption>
+                                <img src="images/faxineira.png" width="185" height="246">
+                                <figcaption>Faxineira Leticia</figcaption>
                             </figure>
                         </a>
+                        <div class="estrelas">
+                            <a href="#">Limpezas Gerais</a>
+                            <input type="radio" id="cm_star-empty" name="fb" value="" checked/>
+                            <label for="cm_star-1"><i class="fa"></i></label>
+                            <input type="radio" id="cm_star-1" name="fb" value="1"/>
+                            <label for="cm_star-2"><i class="fa"></i></label>
+                            <input type="radio" id="cm_star-2" name="fb" value="2"/>
+                            <label for="cm_star-3"><i class="fa"></i></label>
+                            <input type="radio" id="cm_star-3" name="fb" value="3"/>
+                            <label for="cm_star-4"><i class="fa"></i></label>
+                            <input type="radio" id="cm_star-4" name="fb" value="4"/>
+                            <label for="cm_star-5"><i class="fa"></i></label>
+                            <input type="radio" id="cm_star-5" name="fb" value="5"/>
+                        </div>
                     </li>
-                    <!--Segundo produto-->
+                    <!--Segundo destaque-->
                     <li>
-                        <a href="produtos.html">
-                                <img src="images/reparo_notebook.jpg" alt="miniatura1" width="140" height="140">
-                                <figcaption>
-                                    Reparo de Notebook<br>
-                                    Fone: xx-xxxx-xxxx
-                                </figcaption>
+                        <a href="#">
+                            <figure>
+                                <img src="images/pedreiro.jpg" width="185" height="246">
+                                <figcaption>Pedreiro José</figcaption>
+                            </figure>
                         </a>
+                        <div class="estrelas">
+                            <a href="#">Obra</a>
+                            <input type="radio" id="cm_star-empty" name="fb" value="" checked/>
+                            <label for="cm_star-6"><i class="fa"></i></label>
+                            <input type="radio" id="cm_star-6" name="fb" value="6"/>
+                            <label for="cm_star-7"><i class="fa"></i></label>
+                            <input type="radio" id="cm_star-7" name="fb" value="7"/>
+                            <label for="cm_star-8"><i class="fa"></i></label>
+                            <input type="radio" id="cm_star-8" name="fb" value="8"/>
+                            <label for="cm_star-9"><i class="fa"></i></label>
+                            <input type="radio" id="cm_star-9" name="fb" value="9"/>
+                            <label for="cm_star-10"><i class="fa"></i></label>
+                            <input type="radio" id="cm_star-10" name="fb" value="10"/>
+                        </div>
                     </li>
-                    <!--Terceiro produto-->
+                    <!--Terceiro Destaque-->
                     <li>
-                        <a href="produtos.html">
-                                <img src="images/reparo_notebook.jpg" alt="miniatura1" width="140" height="140">
-                                <figcaption>
-                                    Reparo de Notebook<br>
-                                    Fone: xx-xxxx-xxxx
-                                </figcaption>
+                        <a href="#">
+                            <figure>
+                                <img src="images/pedreiro.jpg" width="185" height="246">
+                                <figcaption>Pedreiro José</figcaption>
+                            </figure>
                         </a>
+                        <div class="estrelas">
+                            <a href="#">Obra</a>
+                            <input type="radio" id="cm_star-empty" name="fb" value="" checked/>
+                            <label for="cm_star-6"><i class="fa"></i></label>
+                            <input type="radio" id="cm_star-6" name="fb" value="6"/>
+                            <label for="cm_star-7"><i class="fa"></i></label>
+                            <input type="radio" id="cm_star-7" name="fb" value="7"/>
+                            <label for="cm_star-8"><i class="fa"></i></label>
+                            <input type="radio" id="cm_star-8" name="fb" value="8"/>
+                            <label for="cm_star-9"><i class="fa"></i></label>
+                            <input type="radio" id="cm_star-9" name="fb" value="9"/>
+                            <label for="cm_star-10"><i class="fa"></i></label>
+                            <input type="radio" id="cm_star-10" name="fb" value="10"/>
+                        </div>
                     </li>
-                    <!--Quarto produto-->
+                    <!--Quarto Destaque-->
                     <li>
-                        <a href="produtos.html">
-                                <img src="images/reparo_notebook.jpg" alt="miniatura1" width="140" height="140">
-                                <figcaption>
-                                    Reparo de Notebook<br>
-                                    Fone: xx-xxxx-xxxx
-                                </figcaption>
+                        <a href="#">
+                            <figure>
+                                <img src="images/pedreiro.jpg" width="185" height="246">
+                                <figcaption>Pedreiro José</figcaption>
+                            </figure>
                         </a>
+                        <div class="estrelas">
+                            <a href="#">Obra</a>
+                            <input type="radio" id="cm_star-empty" name="fb" value="" checked/>
+                            <label for="cm_star-6"><i class="fa"></i></label>
+                            <input type="radio" id="cm_star-6" name="fb" value="6"/>
+                            <label for="cm_star-7"><i class="fa"></i></label>
+                            <input type="radio" id="cm_star-7" name="fb" value="7"/>
+                            <label for="cm_star-8"><i class="fa"></i></label>
+                            <input type="radio" id="cm_star-8" name="fb" value="8"/>
+                            <label for="cm_star-9"><i class="fa"></i></label>
+                            <input type="radio" id="cm_star-9" name="fb" value="9"/>
+                            <label for="cm_star-10"><i class="fa"></i></label>
+                            <input type="radio" id="cm_star-10" name="fb" value="10"/>
+                        </div>
                     </li>
-                    <!--Quinto produto-->
+                    <!--Quinto Destaque-->
                     <li>
-                        <a href="produtos.html">
-                            <img src="images/reparo_notebook.jpg" alt="miniatura1" width="140" height="140">
-                                <figcaption>
-                                    Reparo de Notebook<br>
-                                    Fone: xx-xxxx-xxxx
-                                </figcaption>
+                        <a href="#">
+                            <figure>
+                                <img src="images/pedreiro.jpg" width="185" height="246">
+                                <figcaption>Pedreiro José</figcaption>
+                            </figure>
                         </a>
-                    </li>
-                    <!--Sexto produto-->
-                    <li>
-                        <a href="produtos.html">
-                                <img src="images/reparo_notebook.jpg" alt="miniatura1" width="140" height="140">
-                                <figcaption>
-                                    Reparo de Notebook<br>
-                                    Fone: xx-xxxx-xxxx
-                                </figcaption>
-                        </a>
+                        <div class="estrelas">
+                            <a href="#">Obra</a>
+                            <input type="radio" id="cm_star-empty" name="fb" value="" checked/>
+                            <label for="cm_star-6"><i class="fa"></i></label>
+                            <input type="radio" id="cm_star-6" name="fb" value="6"/>
+                            <label for="cm_star-7"><i class="fa"></i></label>
+                            <input type="radio" id="cm_star-7" name="fb" value="7"/>
+                            <label for="cm_star-8"><i class="fa"></i></label>
+                            <input type="radio" id="cm_star-8" name="fb" value="8"/>
+                            <label for="cm_star-9"><i class="fa"></i></label>
+                            <input type="radio" id="cm_star-9" name="fb" value="9"/>
+                            <label for="cm_star-10"><i class="fa"></i></label>
+                            <input type="radio" id="cm_star-10" name="fb" value="10"/>
+                        </div>
                     </li>
                 </ol>
             </section>
-            <!--Fim secção novidades-->
-            <section class="painel mais-vendidos"><!--Trocar o css por mais mais-procurados-->
-                <h2>Mais Procurados</h2>
+            <!--Fim section destaque-->
+
+            <!--Seção gênero-->
+            <section class="painel genero">
+                <h2>Gênero</h2>
                 <ol>
-                    <!--Primeiro produto-->
                     <li>
-                        <a href="produtos.html">
-                            <figure>
-                                    <img src="images/reparo_notebook.jpg" alt="miniatura1" width="140" height="140">
-                                    <figcaption>
-                                        Reparo de Notebook<br>
-                                        Fone: xx-xxxx-xxxx
-                                    </figcaption>
-                            </figure>
-                        </a>
+                        <a href="#">Obras</a>
                     </li>
-                    <!--Segundo produto-->
                     <li>
-                        <a href="produtos.html">
-                            <figure>
-                                    <img src="images/reparo_notebook.jpg" alt="miniatura1" width="140" height="140">
-                                    <figcaption>
-                                        Reparo de Notebook<br>
-                                        Fone: xx-xxxx-xxxx
-                                    </figcaption>
-                            </figure>
-                        </a>
+                        <a href="#">Hidraulico</a>
                     </li>
-                    <!--Terceiro produto-->
                     <li>
-                        <a href="produtos.html">
-                            <figure>
-                                    <img src="images/reparo_notebook.jpg" alt="miniatura1" width="140" height="140">
-                                    <figcaption>
-                                        Reparo de Notebook<br>
-                                        Fone: xx-xxxx-xxxx
-                                    </figcaption>
-                            </figure>
-                        </a>
+                        <a href="#">Eletricidade</a>
                     </li>
-                    <!--Quarto produto-->
                     <li>
-                        <a href="produtos.html">
-                            <figure>
-                                    <img src="images/reparo_notebook.jpg" alt="miniatura1" width="140" height="140">
-                                    <figcaption>
-                                        Reparo de Notebook<br>
-                                        Fone: xx-xxxx-xxxx
-                                    </figcaption>
-                            </figure>
-                        </a>
+                        <a href="#">Serviços gerais</a>
                     </li>
-                    <!--Quinto produto-->
                     <li>
-                        <a href="produtos.html">
-                            <figure>
-                                    <img src="images/reparo_notebook.jpg" alt="miniatura1" width="140" height="140">
-                                    <figcaption>
-                                        Reparo de Notebook<br>
-                                        Fone: xx-xxxx-xxxx
-                                    </figcaption>
-                            </figure>
-                        </a>
+                        <a href="#">Limpeza</a>
                     </li>
-                    <!--Sexto produto-->
                     <li>
-                        <a href="produtos.html">
-                                <img src="images/reparo_notebook.jpg" alt="miniatura1" width="140" height="140">
-                                <figcaption>
-                                    Reparo de Notebook<br>
-                                    Fone: xx-xxxx-xxxx
-                                </figcaption>
-                        </a>
+                        <a href="#">TI</a>
+                    </li>
+                    <li>
+                        <a href="#">Festas</a>
+                    </li>
+                    <li>
+                        <a href="#">Pets</a>
                     </li>
                 </ol>
             </section>
-            <!--Fim secção mais Vendidos-->
+            <!--Fim section gênero-->
+
+            <!--Seciton lançamento-->
+            <section class="painel lancamento">
+                <h2>Ultimas Postagens</h2>
+                <table>
+                    <tr class="titulo">
+                        <th>Titulo</th>
+                        <th>Autor</th>
+                        <th>R$</th>
+                        <th>Data</th>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Procura-se Faxineira</a></td>
+                        <td><a href="#">Carlos José</a></td>
+                        <td><a href="#">a combinar</a></td>
+                        <td><a href="#">29/06/2019</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Procura-se encanador</a></td>
+                        <td><a href="#">Maria Cremetina</a></td>
+                        <td><a href="#">150,99</a></td>
+                        <td><a href="#">19/06/2019</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Procura-se veterinário</a></td>
+                        <td><a href="#">Eric Tobias</a></td>
+                        <td><a href="#">A combinar</a></td>
+                        <td><a href="#">15/06/2019</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Procura-se veterinário</a></td>
+                        <td><a href="#">Eric Tobias</a></td>
+                        <td><a href="#">A combinar</a></td>
+                        <td><a href="#">15/06/2019</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Procura-se veterinário</a></td>
+                        <td><a href="#">Eric Tobias</a></td>
+                        <td><a href="#">A combinar</a></td>
+                        <td><a href="#">15/06/2019</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Procura-se veterinário</a></td>
+                        <td><a href="#">Eric Tobias</a></td>
+                        <td><a href="#">A combinar</a></td>
+                        <td><a href="#">15/06/2019</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Procura-se veterinário</a></td>
+                        <td><a href="#">Eric Tobias</a></td>
+                        <td><a href="#">A combinar</a></td>
+                        <td><a href="#">15/06/2019</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Procura-se veterinário</a></td>
+                        <td><a href="#">Eric Tobias</a></td>
+                        <td><a href="#">A combinar</a></td>
+                        <td><a href="#">15/06/2019</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Procura-se veterinário</a></td>
+                        <td><a href="#">Eric Tobias</a></td>
+                        <td><a href="#">A combinar</a></td>
+                        <td><a href="#">15/06/2019</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Procura-se veterinário</a></td>
+                        <td><a href="#">Eric Tobias</a></td>
+                        <td><a href="#">A combinar</a></td>
+                        <td><a href="#">15/06/2019</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Procura-se veterinário</a></td>
+                        <td><a href="#">Eric Tobias</a></td>
+                        <td><a href="#">A combinar</a></td>
+                        <td><a href="#">15/06/2019</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Procura-se veterinário</a></td>
+                        <td><a href="#">Eric Tobias</a></td>
+                        <td><a href="#">A combinar</a></td>
+                        <td><a href="#">15/06/2019</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Procura-se veterinário</a></td>
+                        <td><a href="#">Eric Tobias</a></td>
+                        <td><a href="#">A combinar</a></td>
+                        <td><a href="#">15/06/2019</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Procura-se veterinário</a></td>
+                        <td><a href="#">Eric Tobias</a></td>
+                        <td><a href="#">A combinar</a></td>
+                        <td><a href="#">15/06/2019</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Procura-se veterinário</a></td>
+                        <td><a href="#">Eric Tobias</a></td>
+                        <td><a href="#">A combinar</a></td>
+                        <td><a href="#">15/06/2019</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Procura-se veterinário</a></td>
+                        <td><a href="#">Eric Tobias</a></td>
+                        <td><a href="#">A combinar</a></td>
+                        <td><a href="#">15/06/2019</a></td>
+                    </tr>
+                </table>
+                <div class="wrapper">
+                    <nav>
+                        <ul class="pager">
+                            <li class="pager__item pager__item--prev">
+                                <a class="pager__link" href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewbox="0 0 8 12">
+                                        <g fill="none" fill-rule="evenodd">
+                                            <path fill="#33313C" d="M7.41 1.41L6 0 0 6l6 6 1.41-1.41L2.83 6z"></path>
+                                        </g>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="pager__item"><a class="pager__link" href="">...</a></li>
+                            <li class="pager__item"><a class="pager__link" href="">1</a></li>
+                            <li class="pager__item active"><a class="pager__link" href="">2</a></li>
+                            <li class="pager__item"><a class="pager__link" href="">3</a></li>
+                            <li class="pager__item"><a class="pager__link" href="">4</a></li>
+                            <li class="pager__item"><a class="pager__link" href="">6</a></li>
+                            <li class="pager__item"><a class="pager__link" href="">7</a></li>
+                            <li class="pager__item"><a class="pager__link" href="">...</a></li>
+                            <li class="pager__item pager__item--next"><a class="pager__link" href="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewbox="0 0 8 12">
+                                    <g fill="none" fill-rule="evenodd">
+                                        <path fill="#33313C" d="M7.41 1.41L6 0 0 6l6 6 1.41-1.41L2.83 6z"></path>
+                                    </g>
+                                </svg></a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </section>
+            <!--Fim section lançamento-->
+
+            <section class="painel noticia">
+                <h2>Notícia</h2>
+                <article>
+                    <h3>Desconto de 30% na inscrição Premium</h3>
+                    <figure>
+                        <img src="images/cirio.jpg" width="745" height="268"> 
+                    </figure>
+                    <p>
+                        Nesse mês de Círio estamos dando um desconto de 30% para as primeiras 30 pessoas que 
+                        fizerem a inscrição no site.
+                        O grupo procura-se deseja a todos um feliz Círio!
+
+                    </p>
+                    <a href="#">Continue lendo...</a>
+                </article>
+            </section>
+            <!--fim seciton noticia-->   
+
+            <!--Fim section recomendado
+            <section class="painel recomendado">
+                <h2>Recomendado</h2>
+                <ol>
+                    <li>
+                        <a href="#">
+                            <figure>
+                                <img src="img-cap/cap/Sakamoto-2.png" alt="sakamoto desu">
+                                <figcaption>Sakamoto Desu</figcaption>
+                            </figure>
+                        </a>
+                        <div class="estrelas">
+                            <a href="#">Comedia</a>
+                            <input type="radio" id="cm_star-empty" name="fb" value="" checked/>
+                            <label for="cm_star-21"><i class="fa"></i></label>
+                            <input type="radio" id="cm_star-21" name="fb" value="21"/>
+                            <label for="cm_star-22"><i class="fa"></i></label>
+                            <input type="radio" id="cm_star-22" name="fb" value="22"/>
+                            <label for="cm_star-23"><i class="fa"></i></label>
+                            <input type="radio" id="cm_star-23" name="fb" value="23"/>
+                            <label for="cm_star-24"><i class="fa"></i></label>
+                            <input type="radio" id="cm_star-24" name="fb" value="24"/>
+                            <label for="cm_star-25"><i class="fa"></i></label>
+                            <input type="radio" id="cm_star-25" name="fb" value="25"/>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <figure>
+                                <img src="img-cap/cap/Log-Horizon-Livro-3.png" alt="Long Horizon">
+                                <figcaption>Long Horizon</figcaption>
+                            </figure>
+                        </a>
+                        <div class="estrelas">
+                            <a href="#">Aventura</a>
+                            <input type="radio" id="cm_star-empty" name="fb" value="" checked/>
+                            <label for="cm_star-21"><i class="fa"></i></label>
+                            <input type="radio" id="cm_star-21" name="fb" value="21"/>
+                            <label for="cm_star-22"><i class="fa"></i></label>
+                            <input type="radio" id="cm_star-22" name="fb" value="22"/>
+                            <label for="cm_star-23"><i class="fa"></i></label>
+                            <input type="radio" id="cm_star-23" name="fb" value="23"/>
+                            <label for="cm_star-24"><i class="fa"></i></label>
+                            <input type="radio" id="cm_star-24" name="fb" value="24"/>
+                            <label for="cm_star-25"><i class="fa"></i></label>
+                            <input type="radio" id="cm_star-25" name="fb" value="25"/>
+                        </div> 
+                    </li>
+                    <li>
+                        <a href="#">
+                            <figure>
+                                <img src="img-cap/cap/aside-walpa.png" alt="Aside Walpa">
+                                <figcaption>Aside Walpa</figcaption>
+                            </figure>
+                        </a>
+                        <div class="estrelas">
+                                <a href="">Ficção Cientifica</a>
+                                <input type="radio" id="cm_star-empty" name="fb" value="" checked/>
+                                <label for="cm_star-21"><i class="fa"></i></label>
+                                <input type="radio" id="cm_star-21" name="fb" value="21"/>
+                                <label for="cm_star-22"><i class="fa"></i></label>
+                                <input type="radio" id="cm_star-22" name="fb" value="22"/>
+                                <label for="cm_star-23"><i class="fa"></i></label>
+                                <input type="radio" id="cm_star-23" name="fb" value="23"/>
+                                <label for="cm_star-24"><i class="fa"></i></label>
+                                <input type="radio" id="cm_star-24" name="fb" value="24"/>
+                                <label for="cm_star-25"><i class="fa"></i></label>
+                                <input type="radio" id="cm_star-25" name="fb" value="25"/>
+                        </div> 
+                    </li>
+                </ol>
+            </section>
+            -->
         </div>
-        <!--fim div painel-->
+        <!--Fim destaque, genero, lançamento, noticia e recomendados-->
         <footer>
-            <div class="container">
-                <img src="images/logo.png" width="170" height="120">
+            <div class="conteiner">
+                <img src="img-cap/overlord fundo.png" alt="Logo Overlord">
                 <ul	class="social">
                     <li><a	href="http://facebook.com/mirrorfashion">Facebook</a></li>
                     <li><a	href="http://twitter.com/mirrorfashion">Twitter</a></li>
