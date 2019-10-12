@@ -1,12 +1,12 @@
 /*Image de fundo*/
 header{
-    background-color: cornsilk;
+    background-color: white;
 }
 /*Centralizar o logo*/
 .logo img
 {
-    padding-left: 250px;
-    padding-top: 65px;
+    padding: auto;
+    border-radius: 16;
 }
 /*barra de pesquisa e login*/
 .login
@@ -34,6 +34,9 @@ header{
     position: absolute;
     right: 107px;
     margin-top: 10px;
+}
+.opcion ul li a{
+    color: black;
 }
 .painel
 {
