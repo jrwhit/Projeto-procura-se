@@ -89,3 +89,12 @@ footer .container	{
 {
     color: white;
 }
+
+/*pagina procura*/
+.pedreiro-bar{
+    background-color: rgba(194, 89, 4, 0.774);
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    padding: 14px 0 14px 0;
+}
